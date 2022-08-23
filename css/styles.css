@@ -1,0 +1,53 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+.canvas{
+    width: calc(34.25em - 3.125rem*4);
+    height: 37.5em;
+    background-color: #4d0f00;
+    overflow: hidden;
+    filter: blur(0.18rem);
+}
+
+.frame{
+    width: 34.25rem;
+    border: 3.125rem solid;
+    border-image-source: linear-gradient(to top right, #6c5a3f, #a46a5b, #eec698, #d59c8d, #ada08c);
+    border-image-slice: 1;
+    margin: 1.25rem auto;
+    padding: 3.125rem;
+}
+
+.one, .two, .three{
+    border-radius: 0.56rem;
+}
+
+.one{
+    width: calc(40.56rem - 21.75rem);
+    height: 9.375rem;
+    background-color: #efb762;
+    margin: 1.25rem auto;
+    box-shadow: 0 0 3px 3px #efb762;
+    transform: rotate(-0.6deg);
+}
+.two{
+    width: calc(42rem - 21.75rem);
+    height: 12.375rem;
+    background-color: #8f0401;
+    margin: 0 auto 1.25rem;
+    box-shadow: 0 0 3px 3px #8f0401;
+    transform: rotate(0.4deg);
+}
+.three{
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+    box-shadow: 0 0 3px 3px #b20403;
+    transform: rotate(-0.2deg);
+    border-radius: 1.875rem 1.56rem 3.75rem 0.75rem;
+}
